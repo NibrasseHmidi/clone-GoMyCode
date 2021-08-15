@@ -1,0 +1,66 @@
+html {
+  background: #1d1d23;
+  color: #fff;
+}
+
+@keyframes vertical {
+  0% {
+    opacity: 0;
+  }
+  4% {
+    opacity: 0;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  10% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  38% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  45% {
+    opacity: 0;
+    -webkit-transform: translateX(90px);
+    transform: translateX(90px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.verticalflip {
+  font-size: 300%;
+  font-weight: bold;
+}
+
+.verticalflip span {
+  animation: vertical 7.5s ease-in-out infinite 0s;
+  -ms-animation: vertical 7.5s linear infinite 0s;
+  -webkit-animation: vertical 7.5s linear infinite 0s;
+  color: white;
+  position: absolute;
+  opacity: 0;
+  background-color: rgb(229, 9, 20);
+
+  padding: 3px;
+  border-radius: 10px;
+}
+
+.verticalflip span:nth-child(2) {
+  -ms-animation-delay: 2.5s;
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+.verticalflip span:nth-child(3) {
+  -ms-animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
